@@ -1,0 +1,21 @@
+name: date_generator
+
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+
+  # PyTorch CPU version
+  - pytorch::pytorch=2.3.*
+  - pytorch::torchvision
+  - pytorch::torchaudio
+
+  - pip:
+      - tensorflow==2.15.*
+      - numpy>=1.24
+      - matplotlib>=3.7
+      - tqdm
